@@ -3,20 +3,20 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-}
 
-.GAME__images {
-  position: relative;
-  width: 25%;
-}
+  &__images {
+    position: relative;
+    width: 25%;
+  }
 
-.GAME__triangle {
-  display: block;
-  width: 100%;
-}
+  &__triangle {
+    display: block;
+    width: 100%;
+  }
 
-.GAME__result {
-  width: 100%;
+  &__result {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1023px) {

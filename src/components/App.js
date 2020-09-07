@@ -7,6 +7,7 @@ const App = () => {
 
   const resetHeight = () => {
     document.body.style.height = `${window.innerHeight}px`;
+    document.getElementById('root').style.height = `${window.innerHeight}px`;
   };
   resetHeight();
   window.addEventListener('resize', resetHeight);
