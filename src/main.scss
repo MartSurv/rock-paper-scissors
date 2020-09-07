@@ -1,2 +1,5 @@
-@import './components/Animations', './components/App', './components/Game',
-  './components/Header', './components/Icon', './components/Result';
+@import '../node_modules/loaders.css/src/animations/ball-pulse.scss';
+
+@import './components/Animations', './components/App', './components/Buttons',
+  './components/Game', './components/Header', './components/Icon',
+  './components/Result', './components/Rules';

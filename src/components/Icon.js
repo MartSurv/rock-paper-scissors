@@ -20,13 +20,13 @@ const Icon = ({ src, alt, onClick, state, computerSelected, renderResult }) => {
           ? `icon icon-${alt} selected ${computerChoice}`
           : `icon icon-${alt} ${blink}`
       }
-      style={state ? { cursor: 'default' } : { cursor: 'pointer' }}
     >
       <img
         className={`${winner}`}
         src={src}
         alt={alt}
         onClick={(e) => handleClick(e)}
+        style={state ? { cursor: 'default' } : { cursor: 'pointer' }}
       />
     </div>
   );

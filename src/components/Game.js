@@ -17,7 +17,7 @@ const items = [
   },
 ];
 
-const Game = ({ score, setScore }) => {
+const Game = ({ score, setScore, loaded }) => {
   const [state, setState] = useState(false);
   const [userSelected, setUserSelected] = useState(null);
   const [computerSelected, setComputerSelected] = useState(null);
@@ -43,7 +43,10 @@ const Game = ({ score, setScore }) => {
           setScore={setScore}
         />
       ) : (
-        <div className="GAME">
+        <div
+          className="GAME"
+          style={loaded ? { display: 'flex' } : { display: 'none' }}
+        >
           <div className="GAME__images">
             <img
               src="images/bg-triangle.svg"

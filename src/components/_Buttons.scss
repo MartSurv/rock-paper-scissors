@@ -1,0 +1,26 @@
+.btn {
+  padding: 1rem 5rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  -webkit-animation: fade-in 0.5s 2.1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s 2.1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+
+  &--rules {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: 2px solid hsl(217, 16%, 45%);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 4rem;
+    color: #f7f7f7;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+}
