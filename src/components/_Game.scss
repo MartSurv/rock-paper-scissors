@@ -7,6 +7,7 @@
 
 .GAME__images {
   position: relative;
+  width: 25%;
 }
 
 .GAME__triangle {
@@ -20,12 +21,18 @@
 
 @media only screen and (max-width: 1023px) {
   .GAME__images {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .GAME__images {
     width: 40%;
   }
 }
 
 @media only screen and (max-width: 520px) {
   .GAME__images {
-    width: 60%;
+    width: 50%;
   }
 }
