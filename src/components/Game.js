@@ -17,7 +17,7 @@ const items = [
   },
 ];
 
-const Game = ({ score, setScore, loaded }) => {
+const Game = ({ score, setScore, loaded, setLoaded }) => {
   const [state, setState] = useState(false);
   const [userSelected, setUserSelected] = useState(null);
   const [computerSelected, setComputerSelected] = useState(null);
@@ -52,6 +52,7 @@ const Game = ({ score, setScore, loaded }) => {
               src="images/bg-triangle.svg"
               alt="Triangle"
               className="GAME__triangle"
+              onLoad={() => setLoaded(true)}
             />
             {items.map((icon) => {
               return (
