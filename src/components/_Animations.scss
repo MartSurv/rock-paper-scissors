@@ -95,41 +95,32 @@
   }
 }
 
-@-webkit-keyframes tracking-in-expand-fwd {
+@-webkit-keyframes text-focus-in {
   0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-700px);
-    transform: translateZ(-700px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
-  40% {
-    opacity: 0.6;
-  }
   100% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
-@keyframes tracking-in-expand-fwd {
+@keyframes text-focus-in {
   0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-700px);
-    transform: translateZ(-700px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
-  40% {
-    opacity: 0.6;
-  }
   100% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
-.tracking-in-expand-fwd {
-  -webkit-animation: tracking-in-expand-fwd 0.5s 1.5s
-    cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking-in-expand-fwd 0.5s 1.5s
-    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+.text-focus-in {
+  -webkit-animation: text-focus-in 0.5s 1.5s
+    cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 0.5s 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }

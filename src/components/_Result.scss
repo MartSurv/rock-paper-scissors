@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
   color: #f7f7f7;
   font-size: 3rem;
@@ -31,6 +32,7 @@
   font-size: 5rem;
   font-weight: 700;
   letter-spacing: 2px;
+  visibility: hidden;
 
   display: flex;
   flex-direction: column;
@@ -55,8 +57,8 @@
   border: none;
   cursor: pointer;
   background-color: #f7f7f7;
-  -webkit-animation: fade-in 0.5s 1.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in 0.5s 1.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation: fade-in 0.5s 2.1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s 2.1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -82,8 +84,16 @@
 }
 
 @media only screen and (max-width: 520px) {
+  .RESULT__content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 0;
+  }
   .RESULT__placeholder {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
+  }
+
+  .RESULT__title {
+    transform: translateY(-120%);
   }
 }

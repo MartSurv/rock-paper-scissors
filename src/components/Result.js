@@ -1,4 +1,3 @@
-import './Result.css';
 import React from 'react';
 import Icon from './Icon';
 
@@ -60,8 +59,8 @@ const Result = ({
             renderResult={renderResult === 'You win' ? renderResult : null}
           />
         </div>
-        <div className="RESULT__status">
-          <div className="tracking-in-expand-fwd">{renderResult}</div>
+        <div className="RESULT__status" style={{ visibility: 'visible' }}>
+          <div className="text-focus-in">{renderResult}</div>
           <button className="btn" onClick={() => handleState(false)}>
             Play again
           </button>

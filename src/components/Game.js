@@ -1,4 +1,3 @@
-import './Game.css';
 import React, { useState } from 'react';
 import Icon from './Icon';
 import Result from './Result';

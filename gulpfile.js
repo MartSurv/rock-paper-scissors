@@ -8,8 +8,8 @@ const cleanCSS = require('gulp-clean-css');
 
 var paths = {
   styles: {
-    src: 'src/sass/**/*.scss',
-    dest: 'dist/css/',
+    src: 'src/**/*.scss',
+    dest: 'public/css/',
   },
 };
 

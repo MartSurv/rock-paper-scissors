@@ -11,6 +11,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  height: 100vh;
+}
+
 #root {
   background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
   background-size: cover;
@@ -33,6 +37,13 @@ html {
   padding-bottom: 2rem;
 }
 
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: block;
+}
+
 @media only screen and (max-width: 1023px) {
   .CONTENT {
     min-width: 700px;
@@ -47,6 +58,6 @@ html {
 
 @media only screen and (max-width: 520px) {
   .CONTENT {
-    min-width: 300px;
+    min-width: 340px;
   }
 }

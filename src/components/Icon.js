@@ -1,4 +1,3 @@
-import './Icon.css';
 import React, { useState } from 'react';
 
 const Icon = ({ src, alt, onClick, state, computerSelected, renderResult }) => {
